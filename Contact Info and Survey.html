@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to talk to me!</title>
+</head>
+<body>
+    <p>This is the section of how to get in contact with me! Please talk to me :></p>
+    <form action="#" method="GET">
+        <!--Encase Controls-->
+        <fieldset>
+            <legend>Contact Details</legend>
+            <!--Text inputs-->
+            <label>Name:<br />
+                <input type="text" name="name" maxlength="15" />
+            </label><br />
+            <label>Email:<br />
+                <input type="email" name="email" /> 
+            </label><br />
+            <label>Subject:<br />
+                <input type="text" name="subject" maxlength="25" />
+            </label>
+        </fieldset>
+        <!--Text Area Box-->
+        <p>Write your thoughts here! I'm happy to hear what you think of the site. Allons-y!:
+            <br />
+            <textarea name="comment" cols="20" rows="4"></textarea>
+        </p>
+        <!--Reset Button-->
+        <input type="reset" value="Reset" />
+        <!--Submit Button-->
+        <input type="submit" value="Submit" />
+    </form>
+    <h2>Quick Survey</h2>
+    <p>You can do this little Survey. Its optional though</p>
+    <form action="#" method="GET">
+        <!--Dropdown Select-->
+        <p>How did you find this site?
+        <br />
+        <select name="site">
+            <option value="Deep searching">Deep searching</option>
+            <option value="Word of mouth">Word of mouth</option>
+            <option value="adversiting">Adversiting</option>
+        </select>
+        </p>
+
+        <!--Raido Buttons-->
+        <p>On a scale from 1 to 5 how did you like my site?
+            <br />
+            <input type="radio" name="rating" value="1" /> 1
+            <input type="radio" name="rating" value="2" /> 2
+            <input type="radio" name="rating" value="3" /> 3
+            <input type="radio" name="rating" value="4" /> 4
+            <input type="radio" name="rating" value="5" /> 5
+        </p>
+
+        <!--Text Area Box-->
+        <p>If there's any thing you want to say, just write them down here :D.
+            <br />
+            <textarea name="comment" cols="20" rows="4"></textarea>
+        </p>
+
+        <!--Submit Button-->
+        <input type="submit" value="Submit Survey" />
+    </form>
+</body>
+</html>
