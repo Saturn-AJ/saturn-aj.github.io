@@ -1,0 +1,21 @@
+
+
+body {
+    background-image: url(../images/bookstore.jpeg);
+    background-size: cover;
+}
+
+h3 {
+    text-align: center;
+}
+
+#Logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    text-align: left;
+}
