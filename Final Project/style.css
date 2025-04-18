@@ -50,3 +50,13 @@ h3 {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+p {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 100px;
+    border: 15px lightgrey;
+    padding: 50px lightgrey;
+    margin: auto;
+}
