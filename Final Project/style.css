@@ -33,12 +33,12 @@ h3 {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #000000;
     display: block;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #d80e0e;
 }
 
 .main{
@@ -55,8 +55,24 @@ p {
     text-align: center;
     background-color: lightgrey;
     width: 400px;
-    height: 100px;
+    height: 70px;
     border: 15px lightgrey;
     padding: 50px lightgrey;
     margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px ;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 200px;
+}
+
+.container > div {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
