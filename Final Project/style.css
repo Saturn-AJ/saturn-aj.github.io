@@ -56,23 +56,26 @@ p {
     background-color: lightgrey;
     width: 400px;
     height: 70px;
-    border: 15px lightgrey;
+    border: 1px solid black;
     padding: 50px lightgrey;
     margin: auto;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 300px 300px 300px ;
+    display: grid ;
+    grid-template-columns: auto auto auto ;
     background-color: lightgrey;
-    padding: 10px;
-    margin: 200px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 250px;
 }
 
 .container > div {
     background-color: whitesmoke;
     border: 1px solid black;
-    padding: 20px;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
     font-size: 30px;
     text-align: center;
 }
