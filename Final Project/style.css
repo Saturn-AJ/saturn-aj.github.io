@@ -115,3 +115,23 @@ p {
 .product-description {
     color: #555;
 }
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.flex-container {
+    display: flex;
+    felx-diection: colum; /* for small screens */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
