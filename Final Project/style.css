@@ -90,10 +90,11 @@ p {
 .product {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: lightgrey;
     border: 1px solid rgb(255, 0, 0);
     padding: 50px lightgrey;
+    margin: auto;
     width: 1000px;
 }
 
