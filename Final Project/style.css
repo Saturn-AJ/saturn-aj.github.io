@@ -140,3 +140,26 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+table {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid black;
+    padding: 50px lightgrey;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+}
+
+.highlight {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid black;
+    padding: 50px lightgrey;
+    margin: auto;
+}
