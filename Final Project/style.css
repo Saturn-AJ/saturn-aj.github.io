@@ -163,3 +163,40 @@ h2 {
     padding: 50px lightgrey;
     margin: auto;
 }
+
+
+table {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid black;
+    padding: 50px lightgrey;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.highlight {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid black;
+    padding: 50px lightgrey;
+    margin: auto;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+iframe {
+    width: 600px;
+    height: 450px;
+}
