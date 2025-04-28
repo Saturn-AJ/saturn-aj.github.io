@@ -200,3 +200,13 @@ iframe {
     width: 600px;
     height: 450px;
 }
+
+ol {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid black;
+    padding: 50px lightgrey;
+    margin: auto;
+}
