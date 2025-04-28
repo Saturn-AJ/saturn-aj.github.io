@@ -6,6 +6,7 @@ body {
 }
 
 h1, h3 {
+    color: #d80e0e;
     text-align: center;
 }
 
@@ -151,6 +152,7 @@ table {
     margin: auto;
 }
 h2 {
+    color: #d80e0e;
     text-align: center;
 }
 
@@ -173,10 +175,6 @@ table {
     border: 1px solid black;
     padding: 50px lightgrey;
     margin: auto;
-}
-
-h2 {
-    text-align: center;
 }
 
 .highlight {
