@@ -208,3 +208,7 @@ ol {
     padding: 50px lightgrey;
     margin: auto;
 }
+
+form {
+    text-align: center;
+}
