@@ -63,7 +63,8 @@ p, footer{
 }
 
 .container {
-    display: grid ;
+    display: flex ;
+    flex-wrap: wrap ; 
     grid-template-columns: auto auto auto ;
     background-color: lightgrey;
     border: 1px solid rgb(255, 0, 0);
