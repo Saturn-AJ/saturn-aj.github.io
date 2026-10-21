@@ -1,20 +1,42 @@
-
 body {
-    background-image: url(../images/vortex.gif);
-    background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  color:white;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 h1 {
-    text-align: center;
+  text-indent: -9999px;
 }
 
-#title {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-#spin {
-    position: absolute;
-    right: 0;
+a {
+  color: whitesmoke;
+}
+
+a :visited {
+  color: rgb(206, 22, 22);
+}
+
+.me {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 1.5rem;
+  background: #1f2757;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
 }

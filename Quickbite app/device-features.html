@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="device-feature assest/styles.css">
+</head>
+<body>
+    <header>
+    <h1>QuickBite Home</h1>
+    <button id="menuToggle">☰</button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+      <a href="device-features.html">Device feature test</a>
+    </nav>        
+    </header>
+
+
+    <video id="cameraPreview" autoplay playsinline width="250"></video>
+ 
+<script>
+async function startCamera() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+    document.getElementById("cameraPreview").srcObject = stream;
+  } catch (error) {
+    console.log("Camera access denied or not available.", error);
+  }
+}
+ 
+startCamera();
+</script>
+
+<button onclick="startMic()">Start Microphone</button>
+ 
+<script>
+async function startMic() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    console.log("Microphone is ready:", stream);
+  } catch (error) {
+    console.log("Microphone access denied or not available.", error);
+  }
+}
+</script>
+
+<button onclick="navigator.vibrate(200)">Tap Feedback</button>
+<button onclick="navigator.vibrate([100, 50, 100])">Error Feedback</button>
+
+<button onclick="getLocation()">Get My Location</button>
+<p id="locationResult"></p>
+ 
+<script>
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        document.getElementById("locationResult").textContent =
+          `Lat: ${position.coords.latitude}, Lon: ${position.coords.longitude}`;
+      },
+      () => {
+        document.getElementById("locationResult").textContent =
+          "Location access denied.";
+      }
+    );
+  } else {
+    document.getElementById("locationResult").textContent =
+      "Geolocation is not supported.";
+  }
+}
+</script>
+
+<button onclick="copyOrder()">Copy Order Number</button>
+<button onclick="shareReceipt()">Share Receipt</button>
+ 
+<script>
+function copyOrder() {
+  navigator.clipboard.writeText("Order #QB1025");
+  alert("Order number copied!");
+}
+ 
+async function shareReceipt() {
+  if (navigator.share) {
+    await navigator.share({
+      title: "QuickBite Receipt",
+      text: "Here is my QuickBite receipt.",
+      url: "https://example.com/receipt"
+    });
+  } else {
+    alert("Sharing is not supported on this device.");
+  }
+}
+</script>
+
+</body>
+</html>

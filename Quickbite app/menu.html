@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>QuickBite Menu</h1>
+    <button id="menuToggle">☰</button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
+  <!-- Menu Cards -->
+  <main class="cards">    
+    <div class="card" data-item="Hamburger" data-category="food">
+      <h2>Burger</h2>
+      <img src="images/burger.jpg" alt="a burger with no cheese" height="70%" width="70%">
+      <p>Juicy grilled hamburger</p>
+      <p>3.99</p>
+    </div>
+    <div class="card" data-item="Cheeseburger" data-category="food">
+      <h2>Cheese-Burger</h2>
+      <img src="images/Cheeseburger.jpg" alt="A burger with cheese"  height="70%" width="70%">
+      <p>Juicy grilled burger with cheese</p>
+      <p>$4.99</p>
+    </div>
+    <div class="card" data-item="Mozzarella Sticks" data-category="appetizer">
+      <h2>Mozzarella Sticks</h2>
+      <img src="images/cheesestick.jpg" alt="stick with cheese inside of it" height="70%" width="70%">
+      <p>Mozzarella Sticks</p>
+      <p>$2.49</p>
+    </div>
+    <div class="card" data-item="Fries">
+      <h2>Fries</h2>
+      <img src="images/fries.jpg" alt="Golden crispy fries" height="70%" width="70%">
+      <p>Crispy golden fries.</p>
+      <p>$2.49</p>
+    </div>
+    <div class="card" data-item="Shake" data-category="desert">
+      <h2>Shake</h2>
+      <img src="images/shake.jpg" alt="A vanilla shake with sprinkles" height="70%" width="70%">
+      <p>Vanilla milkshake with sprinkles.</p>
+      <p>$3.49</p>
+    </div>
+    <div class="card" data-item="Coke" data-category="drink">
+      <h2>Coke</h2>
+      <img src="images/coke.jpg" alt="coke bottle" height="70%" width="70%">
+      <p>A Cold glass bottle of coke</p>
+      <p>$1.00</p>
+    </div>
+  </main>
+
+  <!-- Order Form (hidden by default) -->
+  <section id="orderSection" style="display:none;">
+    <h2>Order Form</h2>
+    <label for="item">Item:</label>
+   <input type="text" id="item" readonly>
+
+      <div id="sizeOptions" style="display:none;">
+     <label>Size:</label>
+     <select id="size">
+      <option value="small">Small</option>
+       <option value="medium">Medium</option>
+       <option value="large">Large</option>
+     </select>
+
+   </div>
+
+      <label>Extras:</label>
+      <select id="sauce" name="size">
+        <option value="">--No Sauce--</option>
+        <option value="ketchup">Ketchup</option>
+        <option value="mustard">Mustard</option>
+        <option value="mayo">Mayo</option>
+      </select>
+      <br>
+
+
+      <input type="text" id="name" placeholder="Full Name" required>
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" placeholder="123-456-7890" required>
+      <input type="email" id="email" placeholder="you@example.com" required>
+      <input type="date" id="pickupDate" required>
+      <textarea id="instructions" placeholder="Special instructions (optional)"></textarea>
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="payment" required>
+        <option value="">--Select--</option>
+        <option value="Apple Pay">Apple Pay</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Google Pay">Google Pay</option>
+      </select> <br>
+      <button type="submit">Place Order</button>
+      <button id="rememberBtn" onclick="rememberOrder()">Remember My order </button>
+    </form>
+  </section>
+  <script>
+    localStorage.setItem('lastOrder', JSON.stringify(orderData));
+  </script>
+
+  <script>
+    const savedOrder = JSON.parse(localStorage.getItem('lastOrder'));
+ 
+if (savedOrder) {
+  displayOrder(savedOrder);
+}
+  </script>
+
+<section id="orderSection" style="display:none;">
+
+
+   <label for="phone">Phone:</label>
+
+   <input type="text" id="phone" placeholder="123-456-7890" required>
+
+
+ </form>
+
+</section>
+
+  <footer>
+    <p>© 2025 QuickBite</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="localstorage.js"></script>
+</body>
+</html>

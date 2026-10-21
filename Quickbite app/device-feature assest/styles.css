@@ -1,0 +1,54 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image:url(device\ images/background.jpg);
+  color:white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #440a0a;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: none;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+input, textarea, button {
+  align-items: left;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+button {
+  background: #440a0a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
