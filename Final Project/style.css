@@ -1,0 +1,221 @@
+
+
+body {
+    background-image: url(../images/bookstore.jpeg);
+    background-size: cover;
+}
+
+h1, h3 {
+    color: #d80e0e;
+    text-align: center;
+}
+
+#Logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #d80e0e;
+}
+
+.main{
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+p, footer{
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 50px lightgrey;
+    margin: auto;
+}
+
+.container {
+    display: flex ;
+    flex-wrap: wrap ; 
+    grid-template-columns: auto auto auto ;
+    background-color: lightgrey;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 5px;
+    margin: 250px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.container > div {
+    background-color: whitesmoke;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 50px lightgrey;
+    margin: auto;
+    width: 1000px;
+}
+
+.product img {
+    margin-right: 20px;
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    color: green;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.flex-container {
+    display: flex;
+    felx-diection: colum; /* for small screens */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid red;
+    padding: 50px lightgrey;
+    margin: auto;
+}
+h2 {
+    color: #d80e0e;
+    text-align: center;
+}
+
+.highlight {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid red;
+    padding: 50px lightgrey;
+    margin: auto;
+}
+
+
+table {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid red;
+    padding: 50px lightgrey;
+    margin: auto;
+}
+
+.highlight {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid red;
+    padding: 50px lightgrey;
+    margin: auto;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+iframe {
+    width: 600px;
+    height: 450px;
+}
+
+ol {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid red;
+    padding: 50px lightgrey;
+    margin: auto;
+}
+
+form {
+    text-align: center;
+    background-color: lightgrey;
+    width: 400px;
+    height: 70px;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 50px lightgrey;
+    margin: auto;
+}
