@@ -33,11 +33,9 @@ a :visited {
   color: rgb(206, 22, 22);
 }
 
-h1 {
-  text-indent: -9999px;
-  width: 940px;
-  height: 130px;
-  margin: 0px;
+.hello {
+  align-items: center;
+  margin-left: 20px;
 }
 
 .first {
